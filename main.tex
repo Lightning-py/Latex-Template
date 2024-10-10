@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\usepackage[14pt]{extsizes}
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amsmath,amsfonts,amssymb,setspace,fancybox,
+fancyhdr,graphicx}
+\usepackage{natbib}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\bibliographystyle{plain}
+\usepackage[left=1cm,right=1cm,
+top=2cm,bottom=2cm,bindingoffset=0cm,bindingoffset=0cm]{geometry}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true, allcolors=[RGB]{0 0 0}}
+\usepackage{setspace}
+
+\geometry{a4paper,
+total={170mm,257mm},left=1.5cm,right=1.5cm,
+top=2cm,bottom=2cm}
+
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\usepackage{minted}
+\usepackage{textcomp}
+\usepackage[unicode, pdftex]{hyperref}
+
+\usepackage{float}%"Плавающие" картинки
+\usepackage{wrapfig}%Обтекание фигур (таблиц, картинок и прочего)
+
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage{listings}
+
+\lstdefinestyle{custompython}{
+  numbers=left,                    % where to put the line-numbers; possible values are 
+  numbersep=10pt,                   % how far the line-numbers are from the code
+  numberstyle=\normalsize\color{gray},
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=Python,
+  showstringspaces=false,
+  basicstyle=\normalsize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customcpp}{
+  numbers=left,                    % where to put the line-numbers; possible values are 
+  numbersep=10pt,                   % how far the line-numbers are from the code
+  numberstyle=\normalsize\color{gray},
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C++,
+  showstringspaces=false,
+  basicstyle=\normalsize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+
+\lstset{escapechar=@,style=custompython}
+
+
+% \setlength{\oddsidemargin}{0cm} 
+% \setlength{\evensidemargin}{0cm}
+\oddsidemargin
+\evensidemargin
+
+
+\begin{document}
+    \pageestyle {empty} % убрать счетчик на первой странице  
+\end{document}
